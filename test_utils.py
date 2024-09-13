@@ -1,5 +1,3 @@
-# Please fill in all the parts labeled as ### YOUR CODE HERE
-
 import numpy as np
 import pytest
 from utils import *
@@ -21,9 +19,6 @@ def test_cosine_similarity():
 
     expected_result = np.dot(
         v1, v2) / (np.linalg.norm(v1) * np.linalg.norm(v2))
-
-    assert np.isclose(result, expected_result), f"Expected {
-        expected_result}, but got {result}"
 
     assert np.isclose(result, expected_result), f"Expected {
         expected_result}, but got {result}"
